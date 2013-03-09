@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MyReminder</title>
+<link href="s40-theme/css/s40-theme.css" rel="stylesheet"
+	type="text/css" />
+<script language="javascript" type="text/javascript"
+	src="s40-theme/js/screensize.js"></script>
+<script type="text/javascript"
+	src="http://api.maps.nokia.com/2.2.4/jsl.js?with=all" charset="utf-8"></script>
+<script type="text/javascript">
+	function refreshPageContent() {
+		// Add code for refreshing te page here...				
+	}
+</script>
+<script src="s40-theme/js/NokiaMapsAdd.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="s40-theme/css/s40-theme_labeled_title.css" />
+
+</head>
+
+<body onload="onMyInit();">
+	<div class="ui-page">
+		<!-- header -->
+		<div class="ui-header">
+			<div class="ui-title inline">
+				<h2>MyReminder</h2>
+			</div>
+			<div class="refresh-icon inline">
+				<a onclick="refreshPageContent();"><img alt="icon"
+					src="s40-theme/images/refresh_40x40.png" />
+				</a>
+			</div>
+		</div>
+		
+		<div id="mainDiv">
+		<div style="float:right;"><a href="#" onclick="changeView('AdditionDiv','mainDiv');onMyAddition();">Add Reminder</a>
+		</div>
+		<div style=""><h2>Your Reminders:</h2></div>
+		<div id="RemindAlert"></div>
+		<div id="mapContainer2"
+				style="z-index: 5; width: 100%; height: 50%; position: absolute;"></div>
+				
+				<div style="float:right">&copy;Manu</div>
+		
+		</div>
+		<div id="AdditionDiv" style="display:none">
+		<div style="float:right;"><a href="#" onclick="changeView('mainDiv','AdditionDiv');myLoadingFunction();">Main Window</a></div>
+		<h2>Add Reminder:</h2>
+			<div id="successNote" style="color: green; display: none;">
+
+				<h3>Added Successfully!!!</h3></div>
+			<div id="myAdditionWindow" style="display: none">
+				<label for="txtReminderInfo">Reminder:</label> <input type="text"
+					id="txtReminderInfo" required="required"
+					placeholder="Enter Information" /> <input type="button"
+					onclick="SaveReminder()" title="Save" value="Save"> <input
+					type="hidden" value="" id="hiddenLatitude" />
+			</div>
+
+			<div id="mapContainer"
+				style="z-index: 5; width: 100%; height: 50%; position: absolute;"></div>
+			<div id="latitudeDiv" style="margin-top: 550px;">Position:</div>
+			<div class="ui-content">
+				<div></div>
+			</div>
+		</div>
+		<div id="ViewDiv" style="display:none">
+			My View Div
+		</div>
+	</div>
+</body>
+</html>

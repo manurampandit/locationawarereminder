@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <widget xmlns="http://www.w3.org/ns/widgets" height="200" id="http://www.manurampandit.in/myreminder" version="1.0" viewmodes="windowed fullscreen" width="200">
+    
+    <name short="MyReminder">MyReminder</name>    
+
+    <description>
+       A reminder application ubiquitous!!!
+    </description>
+    
+    <!-- Note: Author href MUST BE Url encoded 
+        @see http://en.wikipedia.org/wiki/Percent-encoding -->    
+    <author email="manupandit123@gmail.com" href="www.manurampandit.in">
+        Manu Ram Pandit
+    </author>
+    
+    <icon src="icon.png"/>
+
+    <content src="index.html"/>
+    
+    <license>
+	   Copyright Foo Bar Corp, 2012.
+    </license>
+    
+   	<feature name="nokia://s40.nokia.com/SAWRT/2.3" required="true" />
+</widget>
