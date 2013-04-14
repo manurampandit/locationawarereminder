@@ -1,0 +1,110 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin-bottom: 33px;
+}
+
+.hidden {
+	display: none;
+}
+
+.container {
+	width: 100%;
+}
+
+.navbar {
+	margin-bottom: 18px;
+}
+
+.navbar .navbar-inner {
+	padding: 5px;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+	background-color: #eeeeee;
+	width: 100%;
+	max-width: 100%;
+}
+
+.copyright {
+	padding: 10px;
+}
+
+/*
+ * adding for time being
+ */
+.container-fluid {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.row-fluid {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.mainComponentDiv {
+	border: 2px solid;
+	border-radius: 5px;
+	margin:2px;
+}
+
+#additionDiv {
+    height: 100%; 
+    float: left;
+    margin-top: 5px;
+}
+
+.buttonClass {
+	padding: 2px;
+	margin: 5px;
+	height: 25px;
+}
+.crossButton {
+	background-size: 30px 25px;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 30px;
+	height: 25px;
+	padding: 2px;
+	margin: 5px;
+}
+
+.widthHeight {
+    width : 100%;
+    height : 100%;
+}
+
+#addReminderModal {
+    background-color : white;
+    width: 408px;
+    margin-left : -205px;
+}
+
+#addReminderModal .modal-footer {
+    background-color : white;
+}
+
+.alertDiv {
+    border-color : red;
+    background-color : yellow;
+}
+
+.mapDiv {
+    padding : 2%;
+}
+.marginTop2{
+	margin-top: 2%;
+}
